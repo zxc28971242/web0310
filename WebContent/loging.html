@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+user:<input type="text" id="user" value="Mary"/><br/>
+password:<input type="password" id="password" value="m123"><br/>
+<button onclick="generate()">JSON</button>
+<script>
+function generate(){
+	var u =document.getElementById("user");
+	var p =document.getElementById("password");
+	var obj = new Object();
+	obj.user = u.value;
+	obj.password = p.value;
+	var st = 
+		JSON.stringify(obj);
+	alert(st);
+}
+</script>
+</body>
+</html>
